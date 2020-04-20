@@ -1,161 +1,98 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
-const util = require("fs");
+const util = require("util");
 
 const writeReadmeFileAsync = util.promisify(fs.writeFile);
 
-
-const questions = [
-    {
-        "sectionInfo": {
-            "name": "titleTitle",
-            "message": "Add heading that you want as the title of your project e.g. Project Title",
-            "style": "#"
-        }
-
-    },
-    {
-        "sectionInfo": {
-            "name": "titleDesc",
-            "message": "Enter title for adding project description e.g. Description",
-            "type": "input",
-            "style": "##"
-        }
-
-    },
-    {
-        "sectionInfo": {
-            "name": "inputDesc",
-            "message": "Add project description",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleTOC",
-            "message": "Add title for your TOC e.g. Table of Content",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleInstallation",
-            "message": "Add title for Installation e.g. Installation",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputInstallation",
-            "message": "Provide installation details",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleUsage",
-            "message": "Add title for Usage e.g. Usage",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputUsage",
-            "message": "Provide Usage details",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleLicense",
-            "message": "Add title for License e.g. License Info",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputLicense",
-            "message": "Provide license details",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleContributing",
-            "message": "Add title for Contributing e.g. Contributing Info",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputContributing",
-            "message": "Provide Contributing info",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleTests",
-            "message": "Add title for Tests e.g. Tests",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputTests",
-            "message": "Provide info for Tests",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "titleQuestions",
-            "message": "Add title for Questions e.g. Questions",
-            "type": "input",
-            "style": "##"
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputGitHubProfilePic",
-            "message": "Provide Github profile pic",
-            "type": "input",
-            "style": ""
-        }
-    },
-    {
-        "sectionInfo": {
-            "name": "inputGithubEmail",
-            "message": "Provide github email address",
-            "type": "input",
-            "style": ""
-        }
-    }
-];
-
 function promptGithubUser() {
-    questions.forEach(question => {
-        return inquirer.prompt([
-            {
-                type: "input",
-                name: question.name,
-                message: question.message
-            }
-        ])
-    });
 
+    return inquirer.prompt([
+        {
+            type: "input",
+            name: "titleTitle",
+            message: "Add heading that you want as the title of your project e.g. Project Title"
+        },
+        {
+            type: "input",
+            name: "titleDesc",
+            message: "Enter title for adding project description e.g. Description"
+        },
+        {
+            type: "input",
+            name: "inputDesc",
+            message: "Add project description",
+        },
+        {
+            type: "input",
+            name: "titleTOC",
+            message: "Add title for your TOC e.g. Table of Content"
+        },
+        {
+            type: "input",
+            name: "titleInstallation",
+            message: "Add title for Installation e.g. Installation"
+        },
+        {
+            type: "input",
+            name: "inputInstallation",
+            message: "Provide installation details"
+        },
+        {
+            type: "input",
+            name: "titleUsage",
+            message: "Add title for Usage e.g. Usage",
+        },
+        {
+            type: "input",
+            name: "inputUsage",
+            message: "Provide Usage details"
+        },
+        {
+            type: "input",
+            name: "titleLicense",
+            message: "Add title for License e.g. License Info"
+        },
+        {
+            type: "input",
+            name: "inputLicense",
+            message: "Provide license details"
+        },
+        {
+            type: "input",
+            name: "titleContributing",
+            message: "Add title for Contributing e.g. Contributing Info"
+        },
+        {
+            type: "input",
+            name: "inputContributing",
+            message: "Provide Contributing info"
+        },
+        {
+            type: "input",
+            name: "titleTests",
+            message: "Add title for Tests e.g. Tests"
+        },
+        {
+            type: "input",
+            name: "inputTests",
+            message: "Provide info for Tests"
+        },
+        {
+            type: "input",
+            name: "titleQuestions",
+            message: "Add title for Questions e.g. Questions"
+        },
+        {
+            type: "input",
+            name: "inputGitHubProfilePic",
+            message: "Provide Github profile pic"
+        },
+        {
+            type: "input",
+            name: "inputGithubEmail",
+            message: "Provide github email address"
+        }
+    ]);
 }
 
 function generateMarkdown(data) {
@@ -180,11 +117,11 @@ function generateMarkdown(data) {
   `;
 }
 
-promptUser()
+promptGithubUser()
     .then(function (data) {
-        const html = generateMarkdown(data);
+        const readme = generateMarkdown(data);
 
-        return writeReadmeFileAsync("readme.md", md);
+        return writeReadmeFileAsync("readme.md", readme);
     })
     .then(function () {
         console.log("Successfully wrote to readme.md");
