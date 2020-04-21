@@ -1,7 +1,7 @@
 
   
    # Good readme generator
-  [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
+  [Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)(https://shields.io/)
   
   ## Description
   Generates a readme file for the project
@@ -12,7 +12,9 @@
   * Tests
   
   ## Installations
-  npm,node v12.1,Gitbash
+  * npm,
+  * node v12.1,
+  * Gitbash
 
   ## Usage
   Used by github users to generate a good readme for the repo
