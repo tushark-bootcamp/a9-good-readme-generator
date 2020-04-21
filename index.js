@@ -1,6 +1,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 const util = require("util");
+const generateMarkdown = require("./readmefilegenerator");
 
 const writeReadmeFileAsync = util.promisify(fs.writeFile);
 
@@ -70,39 +71,6 @@ function promptGithubUser() {
             message: "Provide github email address"
         }
     ]);
-}
-
-function generateMarkdown(data) {
-    return `
-  
-   # ${data.projectTitle}
-  [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
-  
-  ## Description
-  ${data.description}
-  
-  ## Table of contents
-  ## ${data.toc}
-  
-  ## Installations
-  ${data.installation}
-
-  ## Usage
-  ${data.usage}
-
-  ## License
-  ${data.license}
-
-  ## Contributing
-  ${data.contributing}
-
-  ## Tests
-  ${data.inputTests}
-
-  ## Questions
-  * ${data.inputGitHubProfilePic}
-  * ${data.inputGithubEmail}
-  `;
 }
 
 promptGithubUser()
