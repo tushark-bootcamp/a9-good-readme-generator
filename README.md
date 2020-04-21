@@ -7,7 +7,9 @@
   Generates a readme file for the project
   
   ## Table of contents
-  ## Title,Description,Tests
+  * Title,
+  * Description,
+  * Tests
   
   ## Installations
   npm,node v12.1,Gitbash
