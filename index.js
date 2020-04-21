@@ -74,9 +74,9 @@ function promptGithubUser() {
 
 function generateMarkdown(data) {
     return `
-  [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
   
-  # ${data.projectTitle}
+   # ${data.projectTitle}
+  [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
   
   ## Description
   ${data.description}
