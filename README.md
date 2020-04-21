@@ -1,19 +1,30 @@
 
-  # Title
-  ##Description
-  The project generates a readme.md file
-  ## Table Of Contents
-  ## Installation
-  do install
+  [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
+  
+  # Good readme generator
+  
+  ## Description
+  Readme generator
+  
+  ## Table of contents
+  ## 
+  
+  ## Installations
+  npm,node v12.1
+
   ## Usage
-  usage of...
+  The software is used to generate a good readme file
+
   ## License
-  License enables
+  npm and node
+
   ## Contributing
-  gjkfgjfgfg`
+  Tushar Kolwalkar
+
   ## Tests
-  Testin using TDD
+  undefined
+
   ## Questions
-  * some pic
+  * pic
   * email@email.com
   
