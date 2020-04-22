@@ -2,13 +2,13 @@ function generateMarkdown(data) {
     return `
   
   # ${data.projectTitle}
-  [![Generic badge](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/tushark-bootcamp/a9-good-readme-generator)
+  [![Generic badge](https://img.shields.io/badge/GoodReadme-Generator-green.svg)](https://github.com/tushark-bootcamp/a9-good-readme-generator)
   
   ## Description
   ${data.description}
   
   ## Table of contents
-  * ${data.toc}
+  ${data.toc.map(tocItem => `* ${tocItem}`).join("\n ")}
   
   ## Installations
   ${data.installation}
@@ -23,12 +23,27 @@ function generateMarkdown(data) {
   ${data.contributing}
 
   ## Tests
-  ${data.inputTests}
+  ${data.tests}
 
   ## Questions
   * ${data.inputGitHubProfilePic}
   * ${data.inputGithubEmail}
   `;
 }
+
+/*
+function personTemplate({name, hobbies, job}){
+   return `<article class="person">
+   <h3>${name}</h3>
+   <div>
+       <div>Hobbies:</div>
+       <ul>
+           ${hobbies.map(hobby => `<li>${hobby}</li>`).join(" ")}
+       </ul>
+   </div>
+   <p>Current job: ${job}</p>
+</article>`;
+}
+*/
 
 module.exports = generateMarkdown;
