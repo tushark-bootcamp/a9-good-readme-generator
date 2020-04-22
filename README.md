@@ -1,22 +1,22 @@
 
   
-   # Good readme generator
+  # Good readme generator
   [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
   
   ## Description
-  Generates a readme file for the project
+  Generates a good readme file for your repositiry
   
   ## Table of contents
-  ## Title,Description,Tests
+  * Title,Description,Tests,License,Contributing
   
   ## Installations
   npm,node v12.1,Gitbash
 
   ## Usage
-  Used by github users to generate a good readme for the repo
+  Used by github uses to describe the project
 
   ## License
-  npm and Node v 12
+  npm, Node V12
 
   ## Contributing
   Tushar Kolwalkar
@@ -26,5 +26,5 @@
 
   ## Questions
   * pic
-  * email@email.com
+  * ktusharhk@gmail.com
   

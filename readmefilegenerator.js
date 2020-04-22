@@ -1,14 +1,14 @@
 function generateMarkdown(data) {
     return `
   
-   # ${data.projectTitle}
+  # ${data.projectTitle}
   [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
   
   ## Description
   ${data.description}
   
   ## Table of contents
-  ## ${data.toc}
+  * ${data.toc}
   
   ## Installations
   ${data.installation}
