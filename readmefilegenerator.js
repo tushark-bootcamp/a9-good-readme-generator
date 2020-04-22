@@ -30,11 +30,11 @@ function generateMarkdown(data) {
   * ${data.inputGithubEmail}
   
   ## Screenshots of application
-  ${data.screenshot1}
+  ### ${data.screenshot1}
   ![image](${data.image1})
 
-  ${data.screenshot1}
-  ![image](${data.image1})
+  ### ${data.screenshot2}
+  ![image](${data.image2})
   `;
 }
 

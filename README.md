@@ -1,10 +1,10 @@
 
   
-  # Good file generator
+  # Good
   [![Generic badge](https://img.shields.io/badge/GoodReadme-Generator-green.svg)](https://github.com/tushark-bootcamp/a9-good-readme-generator)
   
   ## Description
-  description
+  desc
   
   ## Table of contents
   * Title
@@ -28,16 +28,16 @@
   Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us
 
   ## Tests
-  TDD
+  tdd
 
   ## Questions
   * pic
   * eml
   
   ## Screenshots of application
-  Snapshot of image1
+  ### Snapshot of search page
   ![image](https://github.com/tushark-bootcamp/a9-good-readme-generator/blob/master/good-readme-shapshot1.png)
 
-  Snapshot of image1
+  ### Second snapshot of search page
   ![image](https://github.com/tushark-bootcamp/a9-good-readme-generator/blob/master/good-readme-shapshot1.png)
   
