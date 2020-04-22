@@ -46,9 +46,14 @@ function promptGithubUser() {
             message: "Provide Usage details"
         },
         {
-            type: "input",
+            type: "checkbox",
             name: "license",
-            message: "Provide license details"
+            message: "Provide license details",
+            choices: [
+                "Node V12",
+                "npm",
+                "github"
+            ]
         },
         {
             type: "input",

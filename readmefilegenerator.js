@@ -8,10 +8,10 @@ function generateMarkdown(data) {
   ${data.description}
   
   ## Table of contents
-  ${data.toc.map(tocItem => `* ${tocItem}`).join("\n ")}
+  ${data.toc.map(tocItem => `* ${tocItem}`).join("\n")}
   
   ## Installations
-  ${data.installation}
+  ${data.installation.map(installItem => `* ${installItem}`).join("\n")}
 
   ## Usage
   ${data.usage}

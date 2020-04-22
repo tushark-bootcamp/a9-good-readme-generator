@@ -4,31 +4,33 @@
   [![Generic badge](https://img.shields.io/badge/GoodReadme-Generator-green.svg)](https://github.com/tushark-bootcamp/a9-good-readme-generator)
   
   ## Description
-  Generates a good readme file
+  Generates a good readme file for github repositories
   
   ## Table of contents
   * Title
- * Description
- * Tests
- * License
- * Contributing
+* Description
+* Tests
+* License
+* Contributing
   
   ## Installations
-  npm,node v12.1,Gitbash
+  * npm
+* node v12.1
+* Gitbash
 
   ## Usage
-  Usd by...
+  Used by gitbub users to generate a good readme file for their projects
 
   ## License
-  license...
+  Node V12,npm,github
 
   ## Contributing
-  Tushar K
+  Tushar Kolwalkar
 
   ## Tests
-  TDD
+  Use TDD
 
   ## Questions
   * pic
-  * email@email.com
+  * ktusharhk@gmail.com
   
