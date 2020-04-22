@@ -28,6 +28,13 @@ function generateMarkdown(data) {
   ## Questions
   * ${data.inputGitHubProfilePic}
   * ${data.inputGithubEmail}
+  
+  ## Screenshots of application
+  ${data.screenshot1}
+  ![image](${data.image1})
+
+  ${data.screenshot1}
+  ![image](${data.image1})
   `;
 }
 

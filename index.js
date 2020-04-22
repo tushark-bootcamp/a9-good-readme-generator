@@ -75,6 +75,26 @@ function promptGithubUser() {
             type: "input",
             name: "inputGithubEmail",
             message: "Provide github email address"
+        },
+        {
+            type: "input",
+            name: "screenshot1",
+            message: "Provide heading for snapshot 1"
+        },
+        {
+            type: "input",
+            name: "image1",
+            message: "Provide URL for image of snapshot 1"
+        },
+        {
+            type: "input",
+            name: "screenshot2",
+            message: "Provide heading for snapshot 2"
+        },
+        {
+            type: "input",
+            name: "image2",
+            message: "Provide URL for image of snapshot 2"
         }
     ]);
 }
