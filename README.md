@@ -1,7 +1,7 @@
 
   
   # Good readme generator
-  [![Generic badge](https://img.shields.io/badge/Good Readme Generator-Maintained-green.svg)](https://shields.io/)
+  [![Generic badge](https://img.shields.io/badge/Maintained-yes-green.svg)](https://github.com/tushark-bootcamp/a9-good-readme-generator)
   
   ## Description
   Generates a good readme file for your repositiry
