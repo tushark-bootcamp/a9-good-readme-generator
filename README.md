@@ -15,8 +15,8 @@
   
   ## Installations
   * npm
-* node v12.1
-* Gitbash
+  * node v12.1
+  * Gitbash
 
   ## Usage
   Used by gitbub users to generate a good readme file for their projects

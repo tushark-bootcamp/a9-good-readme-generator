@@ -33,11 +33,11 @@ function promptGithubUser() {
         {
             type: "checkbox",
             name: "installation",
-            message: "Choose from the below list all the softwares that will need to be installed",
+            message: "Choose which of the following steps are needed to install the software",
             choices: [
-                "npm",
-                "node v12.1",
-                "Gitbash"
+                "Install Visual studio code",
+                "Install npm",
+                "Install node v12.1"
             ]
         },
         {
@@ -48,22 +48,23 @@ function promptGithubUser() {
         {
             type: "checkbox",
             name: "license",
-            message: "Provide license details",
+            message: "Please choose the following option for Licensing policy else edit the README.md file manually after generation",
             choices: [
-                "Node V12",
-                "npm",
-                "github"
+                "This project is licensed under the GPL 3.0 License - see the LICENSE.md file for details"
+            ]
+        },
+        {
+            type: "checkbox",
+            name: "contributing",
+            message: "Please choose the following option for Contributing policy else edit the README.md file manually",
+            choices: [
+                "Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us"
             ]
         },
         {
             type: "input",
-            name: "contributing",
-            message: "Provide Contributing info"
-        },
-        {
-            type: "input",
             name: "tests",
-            message: "Provide info for Tests"
+            message: "Provide detailed steps to run automated test suite"
         },
         {
             type: "input",
@@ -81,7 +82,6 @@ function promptGithubUser() {
 promptGithubUser()
     .then(function (data) {
         const readme = generateMarkdown(data);
-
         return writeReadmeFileAsync("readme.md", readme);
     })
     .then(function () {
