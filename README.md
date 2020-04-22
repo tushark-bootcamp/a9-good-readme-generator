@@ -8,15 +8,15 @@
   
   ## Table of contents
   * Title
-* Description
-* Tests
-* License
-* Contributing
-  
+  * Description
+  * Tests
+  * License
+  * Contributing
+
   ## Installations
   * Install Visual studio code
-* Install npm
-* Install node v12.1
+  * Install npm
+  * Install node v12.1
 
   ## Usage
   Used by github users to generate a readme file
@@ -34,3 +34,5 @@
   * https://www.linkedin.com/in/tushar-kolwalkar-80ba1/?originalSubdomain=au
   * ktusharhk@gmail.com
   
+  ## Page 1 - Snapshot of using inquirer to generate README.md file
+![image](https://github.com/tushark-bootcamp/a9-good-readme-generator/blob/master/good-readme-shapshot1.png)

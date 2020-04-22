@@ -9,7 +9,7 @@ function generateMarkdown(data) {
   
   ## Table of contents
   ${data.toc.map(tocItem => `* ${tocItem}`).join("\n")}
-  
+
   ## Installations
   ${data.installation.map(installItem => `* ${installItem}`).join("\n")}
 
