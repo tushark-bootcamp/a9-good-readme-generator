@@ -1,7 +1,7 @@
 
   
   # Good readme generator
-  [![Generic badge](https://img.shields.io/badge/<Good Readme Generator>-<COMPLETE>-<COLOR>.svg)](https://shields.io/)
+  [![Generic badge](https://img.shields.io/badge/Good Readme Generator-Maintained-green.svg)](https://shields.io/)
   
   ## Description
   Generates a good readme file for your repositiry
