@@ -1,6 +1,6 @@
 
   
-  # Good readme generator
+  # A Good Readme file generator
   [![Generic badge](https://img.shields.io/badge/GoodReadme-Generator-green.svg)](https://github.com/tushark-bootcamp/a9-good-readme-generator)
   
   ## Description
@@ -14,23 +14,23 @@
 * Contributing
   
   ## Installations
-  * npm
-  * node v12.1
-  * Gitbash
+  * Install Visual studio code
+* Install npm
+* Install node v12.1
 
   ## Usage
-  Used by gitbub users to generate a good readme file for their projects
+  Used by github users to generate a readme file
 
   ## License
-  Node V12,npm,github
+  This project is licensed under the GPL 3.0 License - see the LICENSE.md file for details
 
   ## Contributing
-  Tushar Kolwalkar
+  Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us
 
   ## Tests
-  Use TDD
+  Uses TDD
 
   ## Questions
-  * pic
+  * https://www.linkedin.com/in/tushar-kolwalkar-80ba1/?originalSubdomain=au
   * ktusharhk@gmail.com
   
